@@ -1,4 +1,4 @@
-# create-factory-loader
+# create-factory-loader [![CircleCI](https://circleci.com/gh/Originate/create-factory-loader.svg?style=svg)](https://circleci.com/gh/Originate/create-factory-loader)
 
 Webpack loader to wrap exported react components in `react.createFactory`.
 
