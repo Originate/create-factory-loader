@@ -1,0 +1,35 @@
+{
+  "name": "create-factory-loader",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "build": "lsc --compile --bare index",
+    "test": "mocha"
+  },
+  "files": [
+    "index.js",
+    "README.md",
+    "LICENSE"
+  ],
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Originate/create-factory-loader.git"
+  },
+  "author": "Originate",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Originate/create-factory-loader/issues"
+  },
+  "homepage": "https://github.com/Originate/create-factory-loader#readme",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "livescript": "^1.5.0",
+    "livescript-loader": "^0.1.6",
+    "mocha": "^3.1.0",
+    "webpack": "^1.13.2"
+  },
+  "dependencies": {
+    "loader-utils": "^0.2.16"
+  }
+}
