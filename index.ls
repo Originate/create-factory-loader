@@ -6,6 +6,6 @@ module.exports = ->
 
   """
   module.exports = require('react').createFactory(
-    require('#{loader-utils.get-remaining-request this}')
+    require('!!#{loader-utils.get-remaining-request this}')
   );
   """
