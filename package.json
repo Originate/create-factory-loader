@@ -3,15 +3,15 @@
   "version": "1.0.1",
   "description": "",
   "scripts": {
-    "build": "lsc --compile --bare index",
+    "build": "lsc --compile --bare --output lib src",
     "test": "mocha"
   },
   "files": [
-    "index.js",
+    "lib",
     "README.md",
     "LICENSE"
   ],
-  "main": "index.js",
+  "main": "lib",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Originate/create-factory-loader.git"
