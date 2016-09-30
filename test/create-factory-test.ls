@@ -21,3 +21,9 @@ describe 'create-factory-loader' (...) ->
 
   it 'references the same class as a require to the class does' ->
     expect(@bundle.class).to.equal @bundle.factory.class
+
+  it 'returns creates factories for each function in an exported object' ->
+    expect(@bundle.object.button.name).to.eql 'Button factory'
+
+  it 'does not modify non-functions in objects' ->
+    expect(@bundle.object.string).to.eql 'some string'
