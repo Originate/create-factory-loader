@@ -2,7 +2,7 @@ require! react
 
 create-factory-obj = ->
   obj = Object.create it
-  for own k, v of obj when typeof v is \function
+  for own k, v of it when typeof v is \function
     obj[k] = react.create-factory v
   obj
 
