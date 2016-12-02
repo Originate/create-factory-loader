@@ -3,7 +3,10 @@ require! react
 create-factory-obj = ->
   obj = Object.create it
   for own k, v of it when typeof v is \function
-    obj[k] = react.create-factory v
+    let v
+      Object.define-property obj, k,
+        enumerable: yes
+        get: -> react.create-factory v
   obj
 
 module.exports = ->

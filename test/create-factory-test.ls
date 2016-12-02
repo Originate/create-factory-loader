@@ -27,3 +27,6 @@ describe 'create-factory-loader' (...) ->
 
   it 'does not modify non-functions in objects' ->
     expect(@bundle.object.string).to.eql 'some string'
+
+  it 'works with components assined with Object.defineProperty' ->
+    expect(@bundle.object.definePropertyButton.name).to.eql 'Button factory'
